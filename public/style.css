@@ -1,0 +1,21 @@
+html {
+  font-family: sans-serif;
+}
+
+h1 {
+  text-align: center;
+  line-height: 2;
+}
+
+@media only screen and (min-width: 1200px) {
+  .charts-container {
+    display: flex;
+  }
+  .line-chart-container {
+    flex-grow: 1;
+    margin-bottom: 2rem;
+  }
+  .pie-chart-container {
+    flex-basis: 40%;
+  }
+}
