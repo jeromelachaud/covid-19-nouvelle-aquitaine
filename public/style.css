@@ -9,13 +9,7 @@ h1 {
 
 @media only screen and (min-width: 1200px) {
   .charts-container {
-    display: flex;
-  }
-  .line-chart-container {
-    flex-grow: 1;
-    margin-bottom: 2rem;
-  }
-  .pie-chart-container {
-    flex-basis: 40%;
+    display: grid;
+    grid-template-columns: 60% 40%;
   }
 }
