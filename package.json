@@ -1,15 +1,23 @@
 {
-  "name": "covid-19-correze",
+  "name": "covid-19-nouvelle-aquitaine",
   "version": "1.0.0",
-  "description": "",
+  "description": "covid-19 tracker for the Nouvelle-Aquitaine region of France",
   "main": "index.js",
   "scripts": {
-    "start": "parcel index.html --open",
-    "build": "parcel build index.html --out-dir=dist"
+    "start": "node server.js",
+    "start:dev": "nodemon server.js"
   },
   "keywords": [],
-  "author": "",
-  "license": "ISC",
+  "author": "Jerome Lachaud",
+  "license": "MIT",
+  "homepage": "https://github.com/jeromelachaud/covid-19-nouvelle-aquitaine#readme",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/jeromelachaud/covid-19-nouvelle-aquitaine.git"
+  },
+  "bugs": {
+    "url": "https://github.com/jeromelachaud/covid-19-nouvelle-aquitaine/issues"
+  },
   "dependencies": {
     "express": "^4.17.1",
     "node-fetch": "^2.6.0",
@@ -17,9 +25,8 @@
     "nodemon": "^2.0.2",
     "pug": "^2.0.4"
   },
-  "devDependencies": {
-    "@riotjs/compiler": "^4.8.2",
-    "@riotjs/parcel-plugin-riot": "^4.0.1",
-    "react-drab": "^1.0.4"
+  "engines": {
+    "npm": ">=6.9.0",
+    "node": ">=12.10.0"
   }
 }
