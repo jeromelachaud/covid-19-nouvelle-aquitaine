@@ -9,7 +9,7 @@ server.use(express.static(path.join(__dirname, '/public')))
 server.set('view engine', 'pug')
 server.set('views', path.join(__dirname, './views'))
 
-server.get('/stats', (req, res) => {
+server.get('/', (req, res) => {
   try {
     res.render('index', {
       title: 'COVID-19 en Nouvelle-Aquitaine',
